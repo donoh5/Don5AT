@@ -50,15 +50,15 @@
     opacity: 0;
     transform: translateY(20px);
   }
-  22% {
+  25% {
     opacity: 1;
     transform: none;
   }
-  44% {
+  50% {
     opacity: 0;
     transform: translateY(20px);
   }
-  72% {
+  75% {
     opacity: 1;
     transform: none;
   }
