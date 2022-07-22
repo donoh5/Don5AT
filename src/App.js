@@ -3,17 +3,14 @@ import React, { useState, useCallback, useEffect } from 'react';
 import mainPage from './components/mainPage';
 
 function App() {
-  const [mainText, setMainText] = useState("Hello, this is Don..");
   const [loaded, setLoaded] = useState(false);
-
-  const welcomeText = useCallback(() => {
-    setMainText("Welcome to my portfolio!");
-  })
+  const [textLoaded, setTextLoaded] = useState(false);
 
   useEffect(() => {
-    const interv = setInterval(welcomeText, 3000);
-    return () => clearInterval(interv);
-  }, [welcomeText])
+    setInterval(() => {
+      setTextLoaded(true);
+    }, 3000);
+  }, [])
 
   useEffect(() => {
     setInterval(() => {
@@ -24,9 +21,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {!loaded &&
+        {!loaded && !textLoaded &&
           <h1 className='fadeinout'>
-            {mainText}
+            Hello, this is Don..
+          </h1>
+        }
+        {!loaded && textLoaded &&
+          <h1 className='fadeinout'>
+            Welcome to my portfolio!
           </h1>
         }
         {loaded &&
