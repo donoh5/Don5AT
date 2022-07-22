@@ -14,18 +14,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #343148;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #D7C49E;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #D7C49E;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +34,47 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.fadeinout{
+  animation: fadeinout 6s ease-in-out;
+}
+
+.fadein{
+  animation: fadein 2s ease-in-out;
+}
+
+@keyframes fadeinout{
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  22% {
+    opacity: 1;
+    transform: none;
+  }
+  44% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  72% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadein{
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
