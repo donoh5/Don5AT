@@ -70,3 +70,52 @@
     transform: none;
   }
 }
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #D7C49E;
+  color: #343148;
+  animation: navanime 2s ease-in;
+}
+
+@keyframes navanime{
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.contents {
+  display: flex;
+  width: 96%;
+  max-width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+}
+
+.li{
+  margin-left: 30px;
+}
