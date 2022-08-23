@@ -18,7 +18,8 @@ mongoose.connect(
 ).then(error => {
         console.log('Could not connect to database : ' + error)
     }
-)
+) 
+
  
 mongoose.Promise = global.Promise;
 app.use(express.static('public'));
