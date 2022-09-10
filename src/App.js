@@ -1,7 +1,8 @@
-// import './App.css';
+import './App.css';
 import React, { useState, useCallback, useEffect } from 'react';
 import mainPage from './components/mainPage';
 import NavMenu from './components/navBar';
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
