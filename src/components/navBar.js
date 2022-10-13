@@ -1,94 +1,112 @@
+import {React, useEffect, useState} from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import React from "react";
-import { Nav, Navbar, Container, Row, Col, NavDropdown} from "react-bootstrap";
-import { LinkContainer } from 'react-router-bootstrap';
-import "bootstrap/dist/css/bootstrap.css";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import NestTest from './nav/NestTest';
+import Footer from './nav/Footer';
 
-import CardComp from "./card";
-import MainPage from "./mainPage";
+import profile from '../images/profile.jpg';
+import { ReactComponent as ProjectIcon } from "../images/folder.svg";
+import { ReactComponent as SkillsIcon } from "../images/hammer.svg";
+import { ReactComponent as ContactIcon } from "../images/phone.svg";
+import { ReactComponent as BlogIcon } from "../images/quill.svg";
 
-function NavMenu(props) {
+import AboutMe from '../pages/AboutMe';
+import Projects from '../pages/Projects';
+import Skills from '../pages/Skills';
+import Blog from '../pages/Blog';
+import Contact from '../pages/Contact';
 
-    return(
-        <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-      <a class="mr-5 hover:text-gray-900">First Link</a>
-      <a class="mr-5 hover:text-gray-900">Second Link</a>
-      <a class="mr-5 hover:text-gray-900">Third Link</a>
-      <a class="hover:text-gray-900">Fourth Link</a>
-    </nav>
-    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl">Tailblocks</span>
-    </a>
-    <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
+function Navbar() {
+    const iconTag = 'h-20 w-20 text-gray-300 mx-auto hover:text-white transition-colors duration-300';
+    const textTag = 'h-5 w-20 text-gray-300 my-12 text-left hover:text-white transition-colors duration-300';
+    const textTagProfile = 'text-gray-300 hover:text-white transition-colors duration-300';
+
+    const [loadOpacity, setLoadOpacity] = useState('transform translate-x-full transition-transform duration-700');
+    const [nav, setNav] = useState('flex flex-col h-auto w-20 bg-wood-4 lg:w-screen duration-300 hover:w-40');
+    const [content, setContent] = useState('flex flex-col w-0 h-auto bg-wood-pattern bg-wood-5');
+
+    useEffect(() => {
+        setLoadOpacity('transform translate-x-0 transition-transform duration-700');
+        setNav('flex flex-col h-auto w-20 bg-wood-4 lg:w-20 duration-300 hover:w-40');
+        setContent('flex flex-col h-auto w-full bg-wood-pattern bg-wood-5');
+    }
+    , []);
+
+    return (
+        <Router>
+            <div class="flex h-screen">
+                <div class={nav}>
+                    <nav class="w-20 hover:w-40 h-full justify-between flex flex-row">
+                        <div class="mt-10 mb-10 flex-none w-20">
+                            <Link to="/AboutMe">
+                                <img src={profile} class="rounded-full w-11 h-11 mx-auto border-2 border-wood-3"/>
+                            </Link>
+                            <div class="mt-10">
+                                <ul>
+                                    <li class="my-12 text-center">
+                                        <Link to="/Projects">
+                                            <span class={iconTag}>
+                                                <ProjectIcon />
+                                            </span>
+                                        </Link>
+                                    </li>
+                                    <li class="my-12 text-center">
+                                        <Link to="/Skills">
+                                            <span class={iconTag}>
+                                                <SkillsIcon />
+                                            </span>
+                                        </Link>
+                                    </li>
+                                    <li class="my-12 text-center">
+                                        <Link to="/Blogs">
+                                            <span class={iconTag}>
+                                                <BlogIcon />
+                                            </span>
+                                        </Link>
+                                    </li>
+                                    <li class="my-12 text-center">
+                                        <Link to="/Contact">
+                                            <span class={iconTag}>
+                                                <ContactIcon />
+                                            </span>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-10 mb-10 flex-none w-20">
+                            <div class="w-20 h-8 mt-3">
+                                <div class={textTagProfile}>
+                                    Resume
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class={textTag}>Project</div>
+                                <div class={textTag}>Skills</div>
+                                <div class={textTag}>Blog</div>
+                                <div class={textTag}>Contact</div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class={content}>
+                    <div class={loadOpacity}>
+                        <Routes>
+                        <Route path="" element={<AboutMe />} />
+                        <Route path="AboutMe" element={<AboutMe />}>
+                            <Route path="Nest" element={<NestTest />} />
+                        </Route>
+                        <Route path="/Projects" element={<Projects />} />
+                        <Route path="/Skills" element={<Skills />} />
+                        <Route path="/Blogs" element={<Blog />} />
+                        <Route path="/Contact" element={<Contact />} />
+                    </Routes>
+                    </div>
+                </div>
+            </div>
+        </Router>
     )
-
-    // return (
-    //     <Router>
-            
-    //         <div className="App">
-    //             <header className="App-header">
-    //                 <Navbar bg="dark" variant="dark">
-    //                     <Container>
-    //                         <Navbar.Brand color="white">Don's Portfolio</Navbar.Brand>
-
-    //                         <Nav className="justify-content-end">
-    //                             <Nav>
-    //                                 <Link to={"/inventory"}
-    //                                     className="nav-link">
-    //                                     'navbar_inventory'
-    //                                 </Link>
-    //                             </Nav>
-
-    //                             <NavDropdown title={'navbar_MyAccount'} id="navbarScrollingDropdown">
-    //                                 <LinkContainer to={"/setting"}>
-    //                                     <NavDropdown.Item> 'navbar_edit_account'  </NavDropdown.Item>
-    //                                 </LinkContainer>
-
-    //                                 <NavDropdown.Divider />
-    //                                 <LinkContainer to={"/"}>
-    //                                     <NavDropdown.Item > 'navbar_Logout'  </NavDropdown.Item>
-    //                                 </LinkContainer>
-
-    //                             </NavDropdown> 
-
-    //                         </Nav>
-    //                     </Container>
-    //                 </Navbar>
-    //             </header>
-
-    //             <Container>
-    //                 <Row>
-    //                     <Col md={12}>
-    //                         <div>
-    //                             <Routes>
-    //                                 <Route exact path="/"
-    //                                     element={<MainPage/>} />
-    //                                 <Route path="/inventory"
-    //                                     element={<MainPage/>} />
-    //                                 <Route path="/setting"
-    //                                     element={<MainPage/>} />
-    //                             </Routes>
-    //                         </div>
-    //                     </Col>
-    //                 </Row>
-    //             </Container>
-    //         </div>
-    //     </Router>
-    // );
 }
 
-export default NavMenu;
+export default Navbar

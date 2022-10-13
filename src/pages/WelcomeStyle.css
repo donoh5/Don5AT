@@ -1,0 +1,72 @@
+#welcome {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    background-color: #3973aa;
+    animation-name: bgColor;
+    animation-duration: 7s;
+    color: #fefeff;
+    height: 100vh;
+    margin: 0;
+}
+
+#page {
+    display: table;
+    height: 90%;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 1.9vw;
+    animation: fadeOut 6s ease infinite;
+}
+
+#container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+    padding: 0;
+    margin: 25px 0;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 6.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+@media (min-width: 840px) {
+    #page {
+        font-size: 140%;
+        width: 800px;
+    }
+}
+
+@keyframes bgColor {
+    0% { 
+        background-color: #3973aa; 
+    } 
+    80% { 
+        background-color: #4F372D; 
+    } 
+    100% { 
+        background-color: #4F372D; 
+    } 
+}
+
+@keyframes fadeOut {
+    0% { 
+        opacity: 100%; 
+    } 
+    50% { 
+        opacity: 100%; 
+    } 
+    100% { 
+        opacity: 0%; 
+    } 
+}
