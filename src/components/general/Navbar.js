@@ -1,20 +1,20 @@
 import {React, useEffect, useState} from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import NestTest from './nav/NestTest';
-import Footer from './nav/Footer';
+import NestTest from '../nav/NestTest';
+import Footer from '../nav/Footer';
 
-import profile from '../images/profile.jpg';
-import { ReactComponent as ProjectIcon } from "../images/folder.svg";
-import { ReactComponent as SkillsIcon } from "../images/hammer.svg";
-import { ReactComponent as ContactIcon } from "../images/phone.svg";
-import { ReactComponent as BlogIcon } from "../images/quill.svg";
+import profile from '../../images/profile.jpg';
+import { ReactComponent as ProjectIcon } from "../../images/folder.svg";
+import { ReactComponent as SkillsIcon } from "../../images/hammer.svg";
+import { ReactComponent as ContactIcon } from "../../images/phone.svg";
+import { ReactComponent as BlogIcon } from "../../images/quill.svg";
 
-import AboutMe from '../pages/AboutMe';
-import Projects from '../pages/Projects';
-import Skills from '../pages/Skills';
-import Blog from '../pages/Blog';
-import Contact from '../pages/Contact';
+import AboutMe from '../../pages/AboutMe';
+import Projects from '../../pages/Projects';
+import Skills from '../../pages/Skills';
+import Blog from '../../pages/Blog';
+import Contact from '../../pages/Contact';
 
 function Navbar() {
     const iconTag = 'h-20 w-20 text-gray-300 mx-auto hover:text-white transition-colors duration-300';
