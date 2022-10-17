@@ -3,7 +3,10 @@ import React from 'react'
 function Projects() {
     return (
         <section class="">
-            <div class="container px-12 py-12 mx-auto">
+        <div class="text-gray-600 absolute text-9xl text-center w-full h-screen py-96 z-10 animate-pulse">
+            Preparing
+        </div>
+            <div class="container px-12 py-12 mx-auto filter blur-xl z-0">
                 <h1 class="text-3xl font-semibold text-center text-wood-4 capitalize lg:text-4xl"> Projects
                 </h1>
 

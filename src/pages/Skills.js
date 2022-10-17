@@ -3,7 +3,10 @@ import React from 'react'
 function Skills() {
     return (
         <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
+        <div class="absolute text-9xl text-center w-full h-screen py-96 z-10 animate-pulse">
+            Preparing
+        </div>
+            <div class="container px-5 py-24 mx-auto filter blur-lg z-0">
                 <div class="text-center mb-20">
                     <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Raw Denim Heirloom Man Braid</h1>
                     <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>

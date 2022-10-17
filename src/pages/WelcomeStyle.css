@@ -2,7 +2,7 @@
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     background-color: #3973aa;
     animation-name: bgColor;
-    animation-duration: 7s;
+    animation-duration: 4s;
     color: #fefeff;
     height: 100vh;
     margin: 0;
@@ -14,7 +14,7 @@
     margin: 0 auto;
     width: 70%;
     font-size: 1.9vw;
-    animation: fadeOut 6s ease infinite;
+    animation: fadeOut 4s ease infinite;
 }
 
 #container {
@@ -63,7 +63,7 @@ h2 {
     0% { 
         opacity: 100%; 
     } 
-    50% { 
+    35% { 
         opacity: 100%; 
     } 
     100% { 

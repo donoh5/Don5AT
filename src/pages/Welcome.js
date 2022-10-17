@@ -6,7 +6,7 @@ function Welcome(props) {
     useEffect(() => {
         setTimeout(() => {
             props.setPage(true);
-        }, 5000);
+        }, 3000);
     }
     , []);
 
