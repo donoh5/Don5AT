@@ -3,8 +3,16 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+        spacing: {
+            '128': '32rem',
+            '144': '36rem',
+            '160': '40rem',
+            '192': '48rem',
+            '256': '64rem'
+        },
         backgroundImage: {
             'wood-pattern': "url('/src/images/wood-pattern.png')",
+            'wood-pattern2': "url('/src/images/wood-pattern2.png')",
         },
         colors: {
             'primary': '#D7C49E',

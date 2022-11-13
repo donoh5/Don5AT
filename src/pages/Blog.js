@@ -4,17 +4,13 @@ import axios from 'axios'
 import BlogCard from '../components/blog/BlogCard'
 
 function Blog() {
-    const [blogs, setBlogs] = useState([]);
-
-    useEffect(() => {
-        axios.get('https://portfolio-don-backend.azurewebsites.net/api/blogHeader')
-            .then(res => {
-                setBlogs(res.data);
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }, [])
+    const [blogs, setBlogs] = useState([{
+        subTopic: "Emerging trends",
+        topic: "File management system 1",
+        desc: "- C# Winform <br/>- Google Drive API",
+        author: "Donguk Oh",
+        date: "15 Oct. 2022",
+    }]);
 
     const items = function () {
         return blogs.map(function (res, i) {

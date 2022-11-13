@@ -7,7 +7,7 @@ function App() {
     const [page, setPage] = useState(false);
 
     if(page){return (
-        <div class="bg-wood-pattern bg-wood-5">
+        <div class="bg-wood-pattern bg-wood-5 fixed w-screen">
             <Navbar />
         </div>
     );

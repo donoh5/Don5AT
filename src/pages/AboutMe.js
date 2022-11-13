@@ -1,42 +1,75 @@
 import React from 'react'
 import { Link, Outlet } from "react-router-dom";
 
+import Resume from '../images/Resume_Donguk.pdf';
+
+import Profile from '../components/resume/Profile';
+import WorkExp from '../components/resume/WorkExp';
+import OtherExp from '../components/resume/OtherExp';
+import Education from '../components/resume/Education';
+
 function AboutMe() {
+    const [menuIndex, setMenuIndex] = React.useState(1);
+
+    const selectedStyle = "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-bold bg-wood-3 inline-flex items-center leading-none border-wood-4 text-wood-5 tracking-wider rounded-t transform duration-300";
+    const unselectedStyle = "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-bold inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider transform duration-300";
+
+    const downloadFile = (url) => {
+        fetch(url, { method: 'GET' })
+            .then((res) => {
+                return res.blob();
+            })
+            .then((blob) => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = "Resume_Donguk.pdf";
+                document.body.appendChild(a);
+                a.click();
+                setTimeout((_) => {
+                    window.URL.revokeObjectURL(url);
+                }, 60000);
+                a.remove();
+            })
+            .catch((err) => {
+                console.error('err: ', err);
+            });
+    };
+
     return (
-        <section class="text-gray-600 body-font h-full">
-            <div class="absolute text-9xl text-center w-full h-screen py-96 z-50 animate-pulse">
-                Preparing
+        <section class="text-wood-4 body-font h-full">
+            <div class="text-center mt-10 -mb-12">
+                <button onClick={() => downloadFile(Resume)} class="border-2 p-2 bg-wood-3 font-bold text-wood-5 border-wood-3 shadow-lg transform transition hover:scale-105 hover:text-wood-4 duration-200 rounded-lg">
+                    Download PDF
+                </button>
             </div>
-            <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col filter blur-xl z-10">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
                 <div class="flex mx-auto flex-wrap mb-20">
-                    <a class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none border-indigo-500 text-indigo-500 tracking-wider rounded-t">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>STEP 1
-                    </a>
-                    <a class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+                    <button onClick={() => setMenuIndex(1)} class={menuIndex == 1 ? selectedStyle : unselectedStyle}>
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>Profile
+                    </button>
+                    <button onClick={() => setMenuIndex(2)} class={menuIndex == 2 ? selectedStyle : unselectedStyle}>
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
                             <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>STEP 2
-                    </a>
-                    <a class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+                        </svg>Work Experience
+                    </button>
+                    <button onClick={() => setMenuIndex(3)} class={menuIndex == 3 ? selectedStyle : unselectedStyle}>
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
                             <circle cx="12" cy="5" r="3"></circle>
                             <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                        </svg>STEP 3
-                    </a>
-                    <a class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+                        </svg>Other Experience
+                    </button>
+                    <button onClick={() => setMenuIndex(4)} class={menuIndex == 4 ? selectedStyle : unselectedStyle}>
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
-                        </svg>STEP 4
-                    </a>
+                        </svg>Education
+                    </button>
                 </div>
-                <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
-                <div class="flex flex-col text-center w-full">
-                    <h1 class="text-xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-                </div>
+                {menuIndex == 1 ? <Profile /> : menuIndex == 2 ? <WorkExp /> : menuIndex == 3 ? <OtherExp /> : menuIndex == 4 ? <Education /> : null}
             </div>
         </section>
     )
