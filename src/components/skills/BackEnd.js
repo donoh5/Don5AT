@@ -63,7 +63,7 @@ function BackEnd() {
         <div class="flex flex-wrap items-center justify-center">
             <div class={loadHeight}>
                 <div class="relative text-white px-6 pb-6 mt-10">
-                        <DotNet />
+                    <DotNet />
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             .Net
@@ -140,7 +140,9 @@ function BackEnd() {
         <div class="flex flex-wrap items-center justify-center mt-12">
             <div class={loadHeight4}>
                 <div class="relative text-white px-6 pb-6 mt-10">
+                    <div class="m-auto w-14 h-14 -mt-3 -mb-1 animate-pulse">
                         <CSharp />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             C#
