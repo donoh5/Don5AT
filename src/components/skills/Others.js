@@ -4,7 +4,7 @@ import { ReactComponent as Azure } from "../../images/skills/microsoftazure.svg"
 
 function Others() {
     const [loadHeight, setLoadHeight] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-  
+
     useEffect(() => {
         setTimeout(function () {
             setLoadHeight("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
@@ -22,7 +22,9 @@ function Others() {
 
             <div class={loadHeight}>
                 <div class="relative text-white px-6 pb-6 mt-10">
-                    <Azure />
+                    <div class="m-auto w-16 h-16 -mt-3 -mb-3 animate-pulse">
+                        <Azure />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             Azure

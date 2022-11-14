@@ -8,7 +8,7 @@ function Database() {
     const [loadHeight, setLoadHeight] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
     const [loadHeight2, setLoadHeight2] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
     const [loadHeight3, setLoadHeight3] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-    
+
     useEffect(() => {
         setTimeout(function () {
             setLoadHeight("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
@@ -33,7 +33,9 @@ function Database() {
         <div class="flex flex-wrap items-center justify-center">
             <div class={loadHeight}>
                 <div class="relative text-white px-6 pb-6 mt-10">
+                    <div class="m-auto w-14 h-14 -mt-3 -mb-1 animate-pulse">
                         <Mongo />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             MongoDB
@@ -59,7 +61,9 @@ function Database() {
 
             <div class={loadHeight2}>
                 <div class="relative text-white px-6 pb-6 mt-10">
-                    <MySQL />
+                    <div class="m-auto w-16 h-16 -mt-4 -mb-2 animate-pulse">
+                        <MySQL />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             MySQL
@@ -85,7 +89,9 @@ function Database() {
 
             <div class={loadHeight3}>
                 <div class="relative text-white px-6 pb-6 mt-10">
-                    <Oracle />
+                    <div class="m-auto w-14 h-14 -mt-2 -mb-2 animate-pulse">
+                        <Oracle />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             Oracle

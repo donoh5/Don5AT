@@ -33,7 +33,9 @@ function FrontEnd() {
         <div class="flex flex-wrap items-center justify-center">
             <div class={loadHeight}>
                 <div class="relative text-white px-6 pb-6 mt-10">
+                    <div class="m-auto w-16 h-16 -mt-3 -mb-3 animate-pulse">
                         <ReactIcon />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             React
@@ -59,7 +61,9 @@ function FrontEnd() {
 
             <div class={loadHeight2}>
                 <div class="relative text-white px-6 pb-6 mt-10">
-                    <Tailwind />
+                    <div class="m-auto w-16 h-16 -mt-4 -mb-2 animate-pulse">
+                        <Tailwind />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             Tailwind CSS
@@ -85,7 +89,9 @@ function FrontEnd() {
 
             <div class={loadHeight3}>
                 <div class="relative text-white px-6 pb-6 mt-10">
-                    <Html />
+                    <div class="m-auto w-16 h-16 -mt-3 -mb-3 animate-pulse">
+                        <Html />
+                    </div>
                     <div class="flex justify-between my-3">
                         <span class="block font-semibold text-xl">
                             HTML
