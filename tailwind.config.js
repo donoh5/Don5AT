@@ -23,6 +23,9 @@ module.exports = {
             'wood-3': '#9f8473',
             'wood-4': '#4F372D',
             'wood-5': '#D6BFAE',
+        },
+        screens: {
+          '3xl': '1700px'
         }
     },
   },

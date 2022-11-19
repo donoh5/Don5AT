@@ -66,9 +66,15 @@ function Skills() {
         }
     };
 
+    const [initStyle, setInitStyle] = useState("container px-5 py-24 mx-auto transform transition duration-500 -translate-y-192");
+
+    useEffect(() => {
+        setInitStyle("container px-5 py-24 mx-auto transform transition duration-500 translate-y-0");
+    }, []);
+
     return (
         <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
+            <div class={initStyle}>
                 <div class="absolute right-1/2 mr-48 z-50">
                     <button onClick={() => handleArrow("left")}>
                         <div class="text-wood-4 hover:text-wood-3 transform hover:scale-110 transition duration-300">

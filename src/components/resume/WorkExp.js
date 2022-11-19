@@ -17,21 +17,25 @@ function WorkExp() {
 
     const [workExp, setWorkExp] = useState(true);
 
-    const handleArrow = () => {
+    const handleArrow = (direction) => {
         setWorkExp(!workExp);
+
+        if (direction){
+            setLoadHeight('bg-wood-2 rounded-2xl shadow-xl dark:bg-gray-800 w-3/4 mx-auto p-8 transform transition-transform -translate-x-128 scale-0 duration-500');
+        }
     };
 
     return (
         <div class={loadOpacity}>
-            <div class="absolute top-1/2 right-3/4 mr-52 text-4xl z-50">
-                <button onClick={handleArrow}>
+            <div class="absolute top-1/2 right-3/4 mr-52 3xl:mr-72 text-4xl z-50">
+                <button onClick={() => handleArrow(true)}>
                     <div class="text-wood-4 hover:text-wood-3 transform hover:scale-110 transition duration-300">
                         <LeftArrow />
                     </div>
                 </button>
             </div>
-            <div class="absolute top-1/2 left-3/4 ml-52 text-4xl z-50">
-                <button onClick={handleArrow}>
+            <div class="absolute top-1/2 left-3/4 ml-52 3xl:ml-72 text-4xl z-50">
+                <button onClick={() => handleArrow(false)}>
                     <div class="text-wood-4 hover:text-wood-3 transform hover:scale-110 transition duration-300">
                         <RightArrow />
                     </div>
