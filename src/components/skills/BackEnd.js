@@ -10,51 +10,51 @@ import { ReactComponent as Python } from "../../images/skills/python.svg";
 
 
 function BackEnd() {
-    const [loadHeight, setLoadHeight] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-    const [loadHeight2, setLoadHeight2] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-    const [loadHeight3, setLoadHeight3] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-    const [loadHeight4, setLoadHeight4] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-    const [loadHeight5, setLoadHeight5] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-    const [loadHeight6, setLoadHeight6] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
-    const [loadHeight7, setLoadHeight7] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
+    const [loadHeight, setLoadHeight] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
+    const [loadHeight2, setLoadHeight2] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
+    const [loadHeight3, setLoadHeight3] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
+    const [loadHeight4, setLoadHeight4] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
+    const [loadHeight5, setLoadHeight5] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
+    const [loadHeight6, setLoadHeight6] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
+    const [loadHeight7, setLoadHeight7] = useState('flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0');
 
     useEffect(() => {
         setTimeout(function () {
-            setLoadHeight("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
-            setLoadHeight2("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
-            setLoadHeight3("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24"); setLoadHeight3("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
-            setLoadHeight4("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
-            setLoadHeight5("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
-            setLoadHeight6("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
-            setLoadHeight7("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-24");
+            setLoadHeight("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-16");
+            setLoadHeight2("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-16");
+            setLoadHeight3("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-16");
+            setLoadHeight4("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-16");
+            setLoadHeight5("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-16");
+            setLoadHeight6("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-16");
+            setLoadHeight7("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 -translate-y-16");
         }, 100);
 
         setTimeout(function () {
-            setLoadHeight7("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
+            setLoadHeight7("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
         }, 400);
 
         setTimeout(function () {
-            setLoadHeight4("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
+            setLoadHeight4("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
         }, 500);
 
         setTimeout(function () {
-            setLoadHeight5("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
+            setLoadHeight5("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
         }, 600);
 
         setTimeout(function () {
-            setLoadHeight6("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
+            setLoadHeight6("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
         }, 700);
 
         setTimeout(function () {
-            setLoadHeight("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
+            setLoadHeight("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
         }, 800);
 
         setTimeout(function () {
-            setLoadHeight2("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
+            setLoadHeight2("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
         }, 900);
 
         setTimeout(function () {
-            setLoadHeight3("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-60 h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
+            setLoadHeight3("flex-shrink-0 mx-4 -mb-6 relative overflow-hidden w-52 h-36 2xl:w-60 2xl:h-40 bg-wood-3 rounded-lg max-w-xs shadow-lg transform hover:scale-110 duration-300 translate-y-0");
         }, 1000);
     }, []);
 
@@ -63,7 +63,7 @@ function BackEnd() {
             <div class="flex flex-wrap items-center justify-center">
                 <div class={loadHeight}>
                     <div class="relative text-white px-6 pb-6 mt-10">
-                        <div class="m-auto w-16 h-16 -mt-3 -mb-3 animate-pulse">
+                        <div class="m-auto w-16 h-16 -mt-6 2xl:-mt-3 -mb-3 animate-pulse transform scale-90 2xl:scale-100">
                             <DotNet />
                         </div>
                         <div class="flex justify-between my-3">
@@ -90,7 +90,7 @@ function BackEnd() {
 
                 <div class={loadHeight2}>
                     <div class="relative text-white px-6 pb-6 mt-10">
-                        <div class="m-auto w-14 h-14 -mt-4 -mb-0 animate-pulse">
+                        <div class="m-auto w-14 h-14 -mt-7 2xl:-mt-4 -mb-0 animate-pulse transform scale-90 2xl:scale-100">
                             <Spring />
                         </div>
                         <div class="flex justify-between my-3">
@@ -117,7 +117,7 @@ function BackEnd() {
 
                 <div class={loadHeight3}>
                     <div class="relative text-white px-6 pb-6 mt-10">
-                        <div class="m-auto w-16 h-16 -mt-3 -mb-3 animate-pulse">
+                        <div class="m-auto w-16 h-16 -mt-6 2xl:-mt-3 -mb-3 animate-pulse transform scale-90 2xl:scale-100">
                             <NodeJS />
                         </div>
                         <div class="flex justify-between my-3">
@@ -146,7 +146,7 @@ function BackEnd() {
             <div class="flex flex-wrap items-center justify-center mt-12">
                 <div class={loadHeight4}>
                     <div class="relative text-white px-6 pb-6 mt-10">
-                        <div class="m-auto w-14 h-14 -mt-3 -mb-1 animate-pulse">
+                        <div class="m-auto w-14 h-14 -mt-6 2xl:-mt-3 -mb-1 animate-pulse transform scale-90 2xl:scale-100">
                             <CSharp />
                         </div>
                         <div class="flex justify-between my-3">
@@ -173,7 +173,7 @@ function BackEnd() {
 
                 <div class={loadHeight5}>
                     <div class="relative text-white px-6 pb-6 mt-10">
-                        <div class="m-auto w-14 h-14 -mt-3 -mb-1 animate-pulse">
+                        <div class="m-auto w-14 h-14 -mt-6 2xl:-mt-3 -mb-1 animate-pulse transform scale-90 2xl:scale-100">
                             <Java />
                         </div>
                         <div class="flex justify-between my-3">
@@ -200,7 +200,7 @@ function BackEnd() {
 
                 <div class={loadHeight6}>
                     <div class="relative text-white px-6 pb-6 mt-10">
-                        <div class="m-auto w-14 h-14 -mt-3 -mb-1 animate-pulse">
+                        <div class="m-auto w-14 h-14 -mt-6 2xl:-mt-3 -mb-1 animate-pulse transform scale-90 2xl:scale-100">
                             <JavaScript />
                         </div>
                         <div class="flex justify-between my-3">
@@ -227,12 +227,12 @@ function BackEnd() {
             </div>
 
             <div class="flex flex-wrap items-center justify-center mt-12">
-                <div class="flex-shrink-0 mx-4 -mb-6 relative w-60 h-40 max-w-xs opacity-0">
+                <div class="flex-shrink-0 mx-4 -mb-6 relative w-52 h-36 2xl:w-60 2xl:h-40 max-w-xs opacity-0">
                 </div>
 
                 <div class={loadHeight7}>
                     <div class="relative text-white px-6 pb-6 mt-10">
-                        <div class="m-auto w-14 h-14 -mt-3 -mb-1 animate-pulse">
+                        <div class="m-auto w-14 h-14 -mt-6 2xl:-mt-3 -mb-1 animate-pulse transform scale-90 2xl:scale-100">
                             <Python />
                         </div>
                         <div class="flex justify-between my-3">
@@ -257,7 +257,7 @@ function BackEnd() {
                     </div>
                 </div>
 
-                <div class="flex-shrink-0 mx-4 -mb-6 relative w-60 h-40 max-w-xs opacity-0">
+                <div class="flex-shrink-0 mx-4 -mb-6 relative w-52 h-36 2xl:w-60 2xl:h-40 max-w-xs opacity-0">
                 </div>
             </div>
         </>

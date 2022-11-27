@@ -41,11 +41,11 @@ function Contact() {
     
     return (
         <section class={initStyle}>
-            <div class="container px-5 py-24 mx-auto">
+            <div class="container px-5 2xl:py-24 py-12 mx-auto">
                 <div class="flex flex-col text-center w-full mb-12">
                     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
                 </div>
-                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="lg:w-1/2 md:w-2/3 mx-auto -mt-10 2xl:-mt-0">
                     <div class="flex flex-wrap -m-2">
                         <div class="p-2 w-1/2">
                             <div class="relative">

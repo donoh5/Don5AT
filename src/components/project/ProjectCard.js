@@ -2,14 +2,14 @@ import React, { useEffect } from 'react'
 
 
 function ProjectCard(props) {
-    const [initStyle, setInitStyle] = React.useState("transform transition duration-500 scale-0 overflow-hidden shadow-lg rounded-lg h-90 w-80 cursor-pointer m-auto");
+    const [initStyle, setInitStyle] = React.useState("transform transition duration-500 scale-0 mb-6 2xl:mb-0 overflow-hidden shadow-lg rounded-lg h-60 2xl:h-auto w-80 3xl:w-96 cursor-pointer m-auto");
 
     useEffect(() => {
         setTimeout(function () {
-            setInitStyle("transform transition duration-500 scale-110 overflow-hidden shadow-lg rounded-lg h-90 w-80 cursor-pointer m-auto");
+            setInitStyle("transform transition duration-500 scale-110 mb-6 2xl:mb-0 overflow-hidden shadow-lg rounded-lg h-60 2xl:h-auto w-80 3xl:w-96 cursor-pointer m-auto");
 
             setTimeout(function () {
-                setInitStyle("transform transition duration-500 hover:scale-105 overflow-hidden shadow-lg rounded-lg h-96 w-80 cursor-pointer m-auto");
+                setInitStyle("transform transition duration-500 hover:scale-105 mb-6 2xl:mb-0 overflow-hidden shadow-lg rounded-lg h-60 2xl:h-auto w-80 3xl:w-96 cursor-pointer m-auto");
             }, 500);
         }, props.item.time);
     }, []);
@@ -27,7 +27,7 @@ function ProjectCard(props) {
                     <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
                         {props.item.title}
                     </p>
-                    <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+                    <p class="text-gray-400 dark:text-gray-300 font-light text-md invisible 2xl:visible -mt-20 2xl:-mt-0">
                         {props.item.desc}
                     </p>
                     {props.item.needBr ? <br /> : null}<br/>

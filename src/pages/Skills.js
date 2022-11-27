@@ -66,10 +66,10 @@ function Skills() {
         }
     };
 
-    const [initStyle, setInitStyle] = useState("container px-5 py-24 mx-auto transform transition duration-500 -translate-y-192");
+    const [initStyle, setInitStyle] = useState("container px-5 pt-14 2xl:py-24 mx-auto transform transition duration-500 -translate-y-192");
 
     useEffect(() => {
-        setInitStyle("container px-5 py-24 mx-auto transform transition duration-500 translate-y-0");
+        setInitStyle("container px-5 pt-14 2xl:py-24 mx-auto transform transition duration-500 translate-y-0");
     }, []);
 
     return (
@@ -90,13 +90,13 @@ function Skills() {
                     </button>
                 </div>
                 <div class={partAnimation1}>
-                    <h1 class="text-xl font-medium text-center title-font text-opacity-70 text-gray-900 mb-4">{partList[partPrev]}</h1>
+                    <h1 class="text-lg 2xl:text-xl font-medium text-center title-font text-opacity-70 text-gray-900 mb-4">{partList[partPrev]}</h1>
                 </div>
                 <div class={partAnimation2}>
-                    <h1 class="text-xl font-medium text-center title-font text-gray-900 mb-4">{partList[partNext]}</h1>
+                    <h1 class="text-lg 2xl:text-xl font-medium text-center title-font text-gray-900 mb-4">{partList[partNext]}</h1>
                 </div>
                 <div class={partAnimation3}>
-                    <h1 class="sm:text-3xl font-medium text-center title-font text-opacity-70 text-gray-900 mb-4">{partList[part]}</h1>
+                    <h1 class="sm:text-2xl 2xl:text-3xl font-medium text-center title-font text-opacity-70 text-gray-900 mb-4">{partList[part]}</h1>
                 </div>
             </div>
             {part === 0 ? <FrontEnd /> : part === 1 ? <BackEnd /> : part === 2 ? <Database /> : <Others />}

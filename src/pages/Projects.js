@@ -48,12 +48,18 @@ function Projects() {
         )
     }
 
+    const [initStyle, setInitStyle] = useState("text-4xl font-bold text-wood-4 mb-4 transform transition duration-1000 -translate-y-40");
+
+    React.useEffect(() => {
+        setInitStyle("2xl:text-4xl text-3xl font-bold text-wood-4 mb-4 transform transition duration-1000 translate-y-0");
+    }, []);
+
     return (
         <div class="w-full p-12">
-            <div class="header flex items-end justify-between mb-12">
+            <div class="header flex items-end justify-between 2xl:mb-12 mb-6">
                 <div class="flex-1 w-1/3 text-center" />
                 <div class="flex-1 w-1/3 text-center title">
-                    <p class="text-4xl font-bold text-wood-4 mb-4">
+                    <p class={initStyle}>
                         Projects
                     </p>
                 </div>

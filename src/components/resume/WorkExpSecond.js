@@ -6,7 +6,7 @@ function WorkExpSecond() {
             <h2 class="text-center">Software Developer</h2>
             <p class="text-gray-600 dark:text-white w-full m-auto text-center text-xl">
                 Developed office-automation program using Python.<br />
-                <p class="font-bold text-base text-left">
+                <p class="2xl:font-bold 2xl:text-base text-left text-sm">
                     <br />•	Automatically documenting attendance information through the existing attendance machine.
                     <br />•	Utilized Google Docs as a server.
                     <br />•	Developed to be used both online and locally.

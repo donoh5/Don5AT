@@ -3,12 +3,12 @@ import React, { useEffect, useState } from 'react'
 import saitLogo from '../../images/sait.png';
 
 function Education() {
-    const [loadOpacity, setLoadOpacity] = useState('transform opacity-30 duration-700');
+    const [loadOpacity, setLoadOpacity] = useState('transform opacity-30 duration-700 -mt-10 2xl:-mt-0');
     const [loadHeight, setLoadHeight] = useState('object-cover object-center rounded-2xl shadow-2xl transform transition-transform -translate-y-24 duration-700');
     const [loadHeight2, setLoadHeight2] = useState('flex flex-col text-center w-full transform transition-transform -translate-y-40 duration-1000');
 
     useEffect(() => {
-        setLoadOpacity('transform opacity-100 duration-700');
+        setLoadOpacity('transform opacity-100 duration-700 -mt-10 2xl:-mt-0');
         setLoadHeight('object-cover object-center transform transition-transform translate-y-0 duration-700');
         setLoadHeight2('flex flex-col text-center w-full transform transition-transform translate-y-0 duration-1000');
     }, []);

@@ -7,11 +7,11 @@ import { ReactComponent as LeftArrow } from "../../images/arrow-left.svg";
 import { ReactComponent as RightArrow } from "../../images/arrow-right.svg";
 
 function WorkExp() {
-    const [loadOpacity, setLoadOpacity] = useState('transform opacity-30 duration-700');
+    const [loadOpacity, setLoadOpacity] = useState('transform opacity-30 duration-700 -mt-10 2xl:-mt-0');
     const [loadHeight, setLoadHeight] = useState('bg-wood-2 rounded-2xl shadow-xl dark:bg-gray-800 w-full mx-auto p-8 transform transition-transform -translate-y-40 duration-700');
 
     useEffect(() => {
-        setLoadOpacity('transform opacity-100 duration-700');
+        setLoadOpacity('transform opacity-100 duration-700 -mt-10 2xl:-mt-0');
         setLoadHeight('bg-wood-2 rounded-2xl shadow-xl dark:bg-gray-800 w-3/4 mx-auto p-8 transform transition-transform translate-y-0 duration-700');
     }, []);
 
@@ -19,10 +19,6 @@ function WorkExp() {
 
     const handleArrow = (direction) => {
         setWorkExp(!workExp);
-
-        if (direction){
-            setLoadHeight('bg-wood-2 rounded-2xl shadow-xl dark:bg-gray-800 w-3/4 mx-auto p-8 transform transition-transform -translate-x-128 scale-0 duration-500');
-        }
     };
 
     return (

@@ -6,7 +6,7 @@ function WorkExpFirst() {
             <h2 class="text-center">Software Developer</h2>
             <p class="text-gray-600 dark:text-white w-full m-auto text-center text-xl">
                 Successfully completed the project to convert the client's existing C++ program to C#.<br />
-                <p class="font-bold text-base text-left">
+                <p class="2xl:font-bold 2xl:text-base text-left text-sm">
                     <br />•	Communicated with two software developers and two DBAs, including myself, and developed 20+ menus out of 150+ menus with new technologies.
                     <br />•	Developed 150+ dialogs out of 210+ dialogs and more than 10% of speed improved on Excel functions.
                     <br />•	Continuously communicated with clients and developed 10+ new functions.
