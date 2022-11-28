@@ -8,7 +8,7 @@ import ProjectCard from '../components/project/ProjectCard';
 
 function Projects() {
     const [projects, setProjects] = useState([{
-        status: "In Progress",
+        status: "v 1.0.6",
         title: "Portfolio",
         desc: "My portfolio website which shows who I am, what I can do, and what I\'ve done. ",
         skills: "React, TailwindCSS, Azure Web Service",
@@ -18,14 +18,14 @@ function Projects() {
         link: "https://www.don5at.com"
     },
     {
-        status: "In Progress",
+        status: "v 1.0.1",
         title: "DongSu",
         desc: "Account book web service.",
         skills: "MERN Stack, TailwindCSS, Azure Web Service",
         img: Dongsu,
         time: 100,
         needBr: true,
-        link: ""
+        link: "https://donoh5.github.io/"
     },
     {
         status: "In Progress",
