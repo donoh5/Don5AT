@@ -25,7 +25,7 @@ function Projects() {
         img: Dongsu,
         time: 100,
         needBr: true,
-        link: "https://dongsu.studio"
+        link: ""
     },
     {
         status: "In Progress",
