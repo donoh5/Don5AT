@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.84af118a.css",
-    "main.js": "/static/js/main.e2786eb2.js",
+    "main.css": "/static/css/main.717226b1.css",
+    "main.js": "/static/js/main.a198a04a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/dongsu.jpg": "/static/media/dongsu.35e1e91cf64e86681489.jpg",
+    "static/media/eventfull.jpg": "/static/media/eventfull.e50e756e8d712d60000a.jpg",
+    "static/media/pasteit.jpg": "/static/media/pasteit.80bfb883fdfb986f96c0.jpg",
+    "static/media/blog2.jpg": "/static/media/blog2.c49136e8bb6524cd7e6b.jpg",
+    "static/media/portfolio.jpg": "/static/media/portfolio.ab2d484cdbf77e7512f4.jpg",
     "static/media/Resume_Donguk.pdf": "/static/media/Resume_Donguk.011ee5f91c12279264e6.pdf",
     "static/media/profile.jpg": "/static/media/profile.c76cf5ccd0e1040e012a.jpg",
     "static/media/wood-pattern.png": "/static/media/wood-pattern.7723af6206c4fed53548.png",
@@ -31,12 +36,12 @@
     "static/media/quill.svg": "/static/media/quill.06443e2946c8a994d632ac1086711a32.svg",
     "static/media/arrow-right.svg": "/static/media/arrow-right.797316a467d3baf0707491578812c5e5.svg",
     "static/media/arrow-left.svg": "/static/media/arrow-left.00804b9ba601fd4c760ac7b0dc5fe2ca.svg",
-    "main.84af118a.css.map": "/static/css/main.84af118a.css.map",
-    "main.e2786eb2.js.map": "/static/js/main.e2786eb2.js.map",
+    "main.717226b1.css.map": "/static/css/main.717226b1.css.map",
+    "main.a198a04a.js.map": "/static/js/main.a198a04a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84af118a.css",
-    "static/js/main.e2786eb2.js"
+    "static/css/main.717226b1.css",
+    "static/js/main.a198a04a.js"
   ]
 }
