@@ -16,7 +16,7 @@ function ProjectCard(props) {
 
     return (
         <div class={initStyle}>
-            <a href={""} target="_blank" class="w-full block h-full">
+            <a href={props.item.link} target="_blank" class="w-full block h-full">
                 <div class="h-40 w-full object-cover">
                     <img alt="blog photo" src={props.item.img} class="h-40 w-full object-cover" />
                 </div>

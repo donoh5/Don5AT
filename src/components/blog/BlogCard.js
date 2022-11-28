@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import tempPic from '../../images/blog1_bg.jpg';
 import windowsIcon from '../../images/windows.png';
 
 function BlogCard(props) {
@@ -17,9 +16,9 @@ function BlogCard(props) {
 
     return (
         <div class={initStyle}>
-            <a href={"https://phrygian-herring-90e.notion.site/File-management-system-Part-1-ffe90d21e13a434eb4412d5e6ff604b2"} target="_blank" class="w-full block h-full">
+            <a href={props.item.link} target="_blank" class="w-full block h-full">
                 <div class="h-32 2xl:h-40 w-full object-cover">
-                    <img alt="blog photo" src={tempPic} class="h-32 2xl:h-40 w-full object-cover" />
+                    <img alt="blog photo" src={props.item.img} class="h-32 2xl:h-40 w-full object-cover" />
                 </div>
                 <div class="bg-white dark:bg-gray-800 w-full p-4 bg-opacity-50">
                     <p class=" text-wood-4 text-md font-medium">

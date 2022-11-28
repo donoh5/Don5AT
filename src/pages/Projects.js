@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 
-import tempPic from '../images/blog1_bg.jpg';
+import Dongsu from '../images/dongsu.jpg';
+import Eventfull from '../images/eventfull.jpg';
+import Pasteit from '../images/pasteit.jpg';
+import Portfolio from '../images/portfolio.jpg';
 import ProjectCard from '../components/project/ProjectCard';
 
 function Projects() {
@@ -9,36 +12,40 @@ function Projects() {
         title: "Portfolio",
         desc: "My portfolio website which shows who I am, what I can do, and what I\'ve done. ",
         skills: "React, TailwindCSS, Azure Web Service",
-        img: tempPic,
+        img: Portfolio,
         time: 0,
-        needBr: false
+        needBr: false,
+        link: "https://www.don5at.com"
     },
     {
         status: "In Progress",
         title: "DongSu",
         desc: "Account book web service.",
         skills: "MERN Stack, TailwindCSS, Azure Web Service",
-        img: tempPic,
+        img: Dongsu,
         time: 100,
-        needBr: true
+        needBr: true,
+        link: "https://dongsu.studio"
     },
     {
         status: "In Progress",
         title: "Paste It",
         desc: "Windows application which enhance copy and paste function.",
         skills: "WPF, C#",
-        img: tempPic,
+        img: Pasteit,
         time: 200,
-        needBr: false
+        needBr: false,
+        link: "https://github.com/donoh5/Paste-It"
     },
     {
         status: "In Progress",
         title: "EventFull",
         desc: "Event management web service.",
         skills: "MERN Stack, MUI, Azure Web Service",
-        img: tempPic,
+        img: Eventfull,
         time: 300,
-        needBr: true
+        needBr: true,
+        link: "https://www.eventfull.me"
     }]);
 
     const items = function () {

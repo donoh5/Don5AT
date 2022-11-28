@@ -1,15 +1,28 @@
 import { React, useEffect, useState } from 'react'
 import axios from 'axios'
 
+import Blog1 from '../images/blog1_bg.jpg';
+import Blog2 from '../images/blog2.jpg';
 import BlogCard from '../components/blog/BlogCard'
 
 function Blog() {
     const [blogs, setBlogs] = useState([{
         subTopic: "Emerging trends",
         topic: "File management system 1",
-        desc: "- C# Winform <br/>- Google Drive API",
+        desc: "- C# Winform <br/>- MySQL",
         author: "Donguk Oh",
         date: "15 Oct. 2022",
+        img: Blog1,
+        link: "https://phrygian-herring-90e.notion.site/File-management-system-Part-1-ffe90d21e13a434eb4412d5e6ff604b2"
+    },
+    {
+        subTopic: "Emerging trends",
+        topic: "File management system 2",
+        desc: "- C# Winform <br/>- Google Drive API",
+        author: "Donguk Oh",
+        date: "27 Nov. 2022",
+        img: Blog2,
+        link: "https://phrygian-herring-90e.notion.site/File-management-system-Part-2-2f91464a8172455d96a4acf17a50053e"
     }]);
 
     const items = function () {
@@ -36,7 +49,7 @@ function Blog() {
                 </div>
                 <div class="flex-1 w-1/3 text-center" />
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
                 {items()}
             </div>
         </div>
