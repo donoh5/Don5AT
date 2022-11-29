@@ -5,13 +5,14 @@ import Eventfull from '../images/eventfull.jpg';
 import Pasteit from '../images/pasteit.jpg';
 import Portfolio from '../images/portfolio.jpg';
 import ProjectCard from '../components/project/ProjectCard';
+import PasteitExe from '../images/setup.exe';
 
 function Projects() {
     const [projects, setProjects] = useState([{
-        status: "v 1.0.6",
+        status: "v 1.0.3",
         title: "Portfolio",
         desc: "My portfolio website which shows who I am, what I can do, and what I\'ve done. ",
-        skills: "React, TailwindCSS, Azure Web Service",
+        skills: "React, TailwindCSS",
         img: Portfolio,
         time: 0,
         needBr: false,
@@ -21,7 +22,7 @@ function Projects() {
         status: "v 1.0.1",
         title: "DongSu",
         desc: "Account book web service.",
-        skills: "MERN Stack, TailwindCSS, Azure Web Service",
+        skills: "MERN Stack, TailwindCSS, Azure",
         img: Dongsu,
         time: 100,
         needBr: true,
@@ -31,17 +32,19 @@ function Projects() {
         status: "In Progress",
         title: "Paste It",
         desc: "Windows application which enhance copy and paste function.",
-        skills: "WPF, C#",
+        skills: ".Net WPF, C#",
         img: Pasteit,
         time: 200,
         needBr: false,
-        link: "https://github.com/donoh5/Paste-It"
+        link: "",
+        isFile: true,
+        file: PasteitExe
     },
     {
         status: "In Progress",
         title: "EventFull",
         desc: "Event management web service.",
-        skills: "MERN Stack, MUI, Azure Web Service",
+        skills: "React, React-Native, SpringBoot, Java, MongoDB, MUI, Vercel, Azure",
         img: Eventfull,
         time: 300,
         needBr: true,
