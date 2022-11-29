@@ -25,7 +25,7 @@ function Projects() {
         img: Dongsu,
         time: 100,
         needBr: true,
-        link: "https://donoh5.github.io/"
+        link: "https://donoh5.github.io/Ledger_Dongsu/"
     },
     {
         status: "In Progress",
